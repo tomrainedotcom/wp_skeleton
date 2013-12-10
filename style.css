@@ -1,0 +1,106 @@
+/*
+    Template Name: Skelaton
+    Author: Nodding Dog
+    Author URI: http://noddingdogdesign.com
+    Description: A really basic theme with only one menu and one sidebar section. This theme has no style to it just simply a blank canvas. Including a Blog roll (index.php), 
+    page template, single post template. 
+    Text Domain: skelaton
+    Version: 1.0
+    License: GNU General Public Licese V2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags: blank, plain, developer, standard
+*/
+/* display for IE 8 and older */
+header, hgroup, nav, section, article, aside, footer{
+    display:block;
+}
+html{
+    padding: 0 5px;   
+}
+body{
+    padding: 0;
+    margin: 0;
+    width:100%;
+    font-size: 14px;
+}
+#page{
+    width:100%;
+    max-width:960px;
+    margin: 0 auto;
+    position:relative;
+}
+#main{
+    display:inline-block;
+    width:100%;
+    clear:both;
+    zoom:1;
+}
+#primary{
+    width:66.754147%;
+    max-width: 710px;
+    float:left;
+}
+#primary.one-col{
+    width:100%;
+    max-width:960px;
+    float:none;
+}
+#secondary{
+    width: 32.841028%;
+    max-width:240px;
+    float:right;
+}
+/*
+    Header
+*/
+header{
+    width: 100%;
+}
+hgroup{
+    display: inline-block;
+    width: 100%;
+    clear: both;
+    zoom: 1;
+}
+#site-name{
+    float: left;
+    margin: 0;
+    font-size: 18px;
+}
+#site-description{
+    float: right;
+    line-height: 22px;
+}
+/*
+    Navigation
+*/
+nav{
+    width:100%;
+}
+nav #main-menu{
+    display:inline-block;
+    width:100%;
+    clear: both;
+    zoom: 1;
+}
+#main-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#main-menu ul li{
+    float: left;
+}
+#main-menu ul li a{
+    padding: 5px 15px;
+}
+#main-menu ul.nav-menu > li:first-child a{
+    padding: 5px 15px 5px 0;
+}
+#main-menu ul li .sub-menu{
+    position: absolute;
+    display: none;
+}
+#main-menu ul li:hover .sub-menu{
+    display:block;
+}
