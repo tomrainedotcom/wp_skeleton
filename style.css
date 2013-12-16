@@ -28,6 +28,12 @@ body{
     max-width:960px;
     margin: 0 auto;
     position:relative;
+    padding: 0 10px;
+    
+    -webkit-box-shadow: 12px 0 15px -6px rgba(0,0,0,0.4), -12px 0 15px -6px rgba(0,0,0,0.4);
+    box-shadow: 12px 0 15px -6px rgba(0,0,0,0.4), -12px 0 15px -6px rgba(0,0,0,0.4);
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
 }
 #main{
     display:inline-block;
