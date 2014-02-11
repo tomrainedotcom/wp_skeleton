@@ -18,7 +18,7 @@
         document.createElement('aside');
     </script>
     <![endif]-->
-    <?php include(get_template_directory().'/css/custom-style.php'); ?>
+    <?php //include(get_template_directory().'/css/custom-style.php'); ?>
 </head>
 <body <?php body_class(); ?>>
     <div id="page">
