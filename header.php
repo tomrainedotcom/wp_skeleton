@@ -23,15 +23,15 @@
 <body <?php body_class(); ?>>
     <div id="page">
         <header>
-            <hgroup>
-                <h1 id="site-name">
+            <hgroup class="row">
+                <h1 id="site-name" class="col-md-6">
             <?php if( isset($theme_options['site_logo']) && $theme_options['site_logo'] != NULL ){ ?>
                     <a href="<?php bloginfo( 'url' ) ?>"><img src="<?php echo $theme_options['site_logo']; ?>" /></a></h1>
             <?php } else { ?>
                     <a href="<?php bloginfo( 'url' ) ?>"><?php bloginfo( 'name' );//change this to an image if you need ?></a>
             <?php } ?>
                 </h1>
-                <div id="site-description"><?php bloginfo( 'description' ); ?></div>
+                <div id="site-description" class="col-md-6 text-right"><?php bloginfo( 'description' ); ?></div>
             </hgroup>
             <nav>
                 <?php 
@@ -40,4 +40,4 @@
                 ?>
             </nav>
         </header>
-        <div id="main">
+        <div id="main" class="row">

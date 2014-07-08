@@ -5,7 +5,7 @@
     */
     get_header();//wordpress function to include the header.php for info visit http://codex.wordpress.org/Function_Reference/get_header
 ?>
-<div id="primary" class="one-col">
+<div id="primary" class="col-md-12">
     <div id="content" role="main">
         <?php
             //start the post loop

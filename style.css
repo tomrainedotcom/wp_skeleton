@@ -30,9 +30,7 @@ a{
     width:100%;
     max-width:960px;
     margin: 0 auto;
-    position:relative;
-    padding: 0 10px;
-    
+    position:relative;    
     -webkit-box-shadow: 12px 0 15px -6px rgba(0,0,0,0.4), -12px 0 15px -6px rgba(0,0,0,0.4);
     box-shadow: 12px 0 15px -6px rgba(0,0,0,0.4), -12px 0 15px -6px rgba(0,0,0,0.4);
     background-color: rgba(255, 255, 255, 0.4);
@@ -40,10 +38,11 @@ a{
     color: #000000;
 }
 #main{
-    display:inline-block;
+/*    display:inline-block;
     width:100%;
     clear:both;
-    zoom:1;
+    zoom:1;*/
+    padding: 10px;
 }
 #primary{
     width:66.754147%;
@@ -64,7 +63,7 @@ a{
     Header
 */
 header{
-    width: 100%;
+    padding: 10px;
 }
 hgroup{
     display: inline-block;
@@ -73,13 +72,10 @@ hgroup{
     zoom: 1;
 }
 #site-name{
-    float: left;
-    margin: 0;
-    font-size: 18px;
+    
 }
 #site-description{
-    float: right;
-    line-height: 22px;
+
 }
 /*
     Navigation
