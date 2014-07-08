@@ -8,7 +8,7 @@
 ?>
 
     
-<div id="primary" class="col-md-8"><?php //use the id primary for the area that will contain the main content ?>
+<div id="primary" class="col-sm-8"><?php //use the id primary for the area that will contain the main content ?>
         <div id="content" role="main"><?php //use the id content for the area that will be used as the main content area. Some browsers support roles, use main to show it is the main content area ?>
             <?php
                 //start the post loop

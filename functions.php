@@ -28,6 +28,7 @@
     function ndd_enqueue_scripts(){
         //add any scripts used in the site for more info on how to do this visit http://codex.wordpress.org/Function_Reference/wp_enqueue_script
         wp_enqueue_script( 'jquery' );
+        wp_enqueue_script( 'bootstrap', get_template_directory_uri().'/js/bootstrap.min.js', array( 'jquery' ) );
         wp_enqueue_script( 'fitVids', get_template_directory_uri().'/js/jquery.fitvids.js', array( 'jquery' ) );
         wp_enqueue_script( 'theme_script', get_template_directory_uri().'/js/theme-script.js', array( 'fitVids' ) );
     }
@@ -69,7 +70,7 @@
             array(
                 'name'               => 'Contact Form 7', // The plugin name.
                 'slug'               => 'contact-form-7', // The plugin slug (typically the folder name).
-                'source'             => get_template_directory_uri() . '/plugins/contact-form-7.3.5.3.zip', // The plugin source.
+                'source'             => get_template_directory_uri() . '/plugins/contact-form-7.zip', // The plugin source.
                 'required'           => true, // If false, the plugin is only 'recommended' instead of required.
                 'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
                 'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
@@ -117,6 +118,27 @@
                 'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
                 'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
             ),
+            
+            //Image Widget
+            array(
+                'name'               => 'Image Widget', // The plugin name.
+                'slug'               => 'image-widget', // The plugin slug (typically the folder name).
+                'source'             => get_template_directory_uri() . '/plugins/image-widget.4.1.zip', // The plugin source.
+                'required'           => false, // If false, the plugin is only 'recommended' instead of required.
+                'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
+                'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+                'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+            ),
+            //Simple Social Icons
+            array(
+                'name'               => 'Simple Social Icons', // The plugin name.
+                'slug'               => 'simple-social-icons', // The plugin slug (typically the folder name).
+                'source'             => get_template_directory_uri() . '/plugins/simple-social-icons.1.0.6.zip', // The plugin source.
+                'required'           => false, // If false, the plugin is only 'recommended' instead of required.
+                'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
+                'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+                'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+            )
         );
         tgmpa( $plugins );
     }

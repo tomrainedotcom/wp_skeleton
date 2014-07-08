@@ -6,6 +6,7 @@
         $theme_options = get_option('ndd_theme_options');
     ?>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, user-scalable=no, initial-scale=1">
     <title><?php bloginfo( 'name' )?><?php wp_title(' | ', 'left', false); ?></title>
     <!--[if lt IE 9]>
     <script language="javascript" type="text/javascript">
@@ -18,10 +19,9 @@
         document.createElement('aside');
     </script>
     <![endif]-->
-    <?php //include(get_template_directory().'/css/custom-style.php'); ?>
 </head>
 <body <?php body_class(); ?>>
-    <div id="page">
+    <div id="page" class="container">
         <header>
             <hgroup class="row">
                 <h1 id="site-name" class="col-md-6">
@@ -33,10 +33,10 @@
                 </h1>
                 <div id="site-description" class="col-md-6 text-right"><?php bloginfo( 'description' ); ?></div>
             </hgroup>
-            <nav>
+            <nav class="row">
                 <?php 
                     //displaying menu defined in the functions.php file for more info on displaying menus visit http://codex.wordpress.org/Function_Reference/wp_nav_menu
-                    wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'container_id' => 'main-menu' ) ); 
+                    wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu list-inline list-unstyled', 'container_id' => 'main-menu', 'container_class' => 'col-sm-12' ) ); 
                 ?>
             </nav>
         </header>
