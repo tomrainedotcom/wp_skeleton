@@ -21,6 +21,46 @@
             'before_title'  => '<h2 class="widgettitle">',
             'after_title'   => '</h2>'
         ));
+        register_sidebar(array(
+            'name'          => __( 'Footer Area 1' ),
+            'id'            => 'footer-1',
+            'description'   => '',
+            'class'         => '',
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>'
+        ));
+        register_sidebar(array(
+            'name'          => __( 'Footer Area 2' ),
+            'id'            => 'footer-2',
+            'description'   => '',
+            'class'         => '',
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>'
+        ));
+        register_sidebar(array(
+            'name'          => __( 'Footer Area 3' ),
+            'id'            => 'footer-3',
+            'description'   => '',
+            'class'         => '',
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>'
+        ));
+        register_sidebar(array(
+            'name'          => __( 'Footer Area 4' ),
+            'id'            => 'footer-4',
+            'description'   => '',
+            'class'         => '',
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>'
+        ));
     }
     
     add_action( 'wp_enqueue_scripts', 'ndd_enqueue_scripts');
@@ -30,16 +70,18 @@
         wp_enqueue_script( 'jquery' );
         wp_enqueue_script( 'bootstrap', get_template_directory_uri().'/js/bootstrap.min.js', array( 'jquery' ) );
         wp_enqueue_script( 'fitVids', get_template_directory_uri().'/js/jquery.fitvids.js', array( 'jquery' ) );
-        wp_enqueue_script( 'theme_script', get_template_directory_uri().'/js/theme-script.js', array( 'fitVids' ) );
+        wp_enqueue_script( 'theme_script', get_template_directory_uri().'/js/theme-script.js', array( 'fitVids', 'fancybox' ) );
+        wp_enqueue_script( 'fancybox', get_template_directory_uri().'/js/jquery.fancybox.js', array( 'jquery' ) );
     }
     
     add_action( 'wp_enqueue_scripts', 'ndd_enqueue_styles' );
     
     function ndd_enqueue_styles(){
         //add any stylesheets used in the site for more info on how to do this visit http://codex.wordpress.org/Function_Reference/wp_enqueue_style
-        wp_enqueue_style('bootstrap', get_template_directory_uri().'/css/bootstrap.css');
-        wp_enqueue_style('stylesheet', get_template_directory_uri().'/style.css', array('bootstrap'));
+        wp_enqueue_style( 'bootstrap', get_template_directory_uri().'/css/bootstrap.css' );
+        wp_enqueue_style( 'stylesheet', get_template_directory_uri().'/style.css', array( 'bootstrap', 'fancybox' ) );
         //wp_enqueue_style('custom-styles', get_template_directory().'/css/custom-style.php');
+        wp_enqueue_style( 'fancybox', get_template_directory_uri().'/css/jquery.fancybox.css' );
     }
     
     add_action( 'tgmpa_register', 'ndd_register_plugins' );
