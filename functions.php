@@ -101,7 +101,7 @@
             //Advanced Custom Fields Repeater Field
             array(
                 'name'               => 'Advanced Custom Fields Repeater Field', // The plugin name.
-                'slug'               => 'advanced-custom-fields-repeater', // The plugin slug (typically the folder name).
+                'slug'               => 'acf-repeater', // The plugin slug (typically the folder name).
                 'source'             => get_template_directory_uri() . '/plugins/acf-repeater.zip', // The plugin source.
                 'required'           => true, // If false, the plugin is only 'recommended' instead of required.
                 'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
@@ -180,7 +180,47 @@
                 'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
                 'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
                 'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-            )
+            ),
+            //All In One WP Security and Firewall
+            array(
+                'name'               => 'All In One WP Security and Firewall', // The plugin name.
+                'slug'               => 'all-in-one-wp-security-and-firewall', // The plugin slug (typically the folder name).
+                'source'             => get_template_directory_uri() . '/plugins/all-in-one-wp-security-and-firewall.zip', // The plugin source.
+                'required'           => false, // If false, the plugin is only 'recommended' instead of required.
+                'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
+                'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+                'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+            ),
+            //BWP Google XML Sitemaps
+            array(
+                'name'               => 'BWP Google XML Sitemaps', // The plugin name.
+                'slug'               => 'bwp-google-xml-sitemaps', // The plugin slug (typically the folder name).
+                'source'             => get_template_directory_uri() . '/plugins/bwp-google-xml-sitemaps.zip', // The plugin source.
+                'required'           => false, // If false, the plugin is only 'recommended' instead of required.
+                'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
+                'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+                'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+            ),
+            //Google Ananlytics Dashboard for WP
+            array(
+                'name'               => 'Google Ananlytics Dashboard for WP', // The plugin name.
+                'slug'               => 'google-analytics-dashboard-for-wp', // The plugin slug (typically the folder name).
+                'source'             => get_template_directory_uri() . '/plugins/google-analytics-dashboard-for-wp.zip', // The plugin source.
+                'required'           => false, // If false, the plugin is only 'recommended' instead of required.
+                'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
+                'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+                'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+            ),
+            //SEO Ultimate
+            array(
+                'name'               => 'SEO Ultimate', // The plugin name.
+                'slug'               => 'seo-ultimate', // The plugin slug (typically the folder name).
+                'source'             => get_template_directory_uri() . '/plugins/seo-ultimate.zip', // The plugin source.
+                'required'           => false, // If false, the plugin is only 'recommended' instead of required.
+                'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
+                'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+                'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+            ),
         );
         tgmpa( $plugins );
     }
