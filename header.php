@@ -9,17 +9,17 @@
     <meta name="viewport" content="width = device-width, user-scalable=no, initial-scale=1">
     <title><?php bloginfo( 'name' )?><?php wp_title(' | ', 'left', false); ?></title>
     <!--[if lt IE 9]>
-    <script language="javascript" type="text/javascript">
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        document.createElement('header');
-        document.createElement('hgroup');
-        document.createElement('nav');
-        document.createElement('article');
-        document.createElement('section');
-        document.createElement('footer');
-        document.createElement('aside');
-    </script>
+        <script language="javascript" type="text/javascript">
+            document.createElement('header');
+            document.createElement('hgroup');
+            document.createElement('nav');
+            document.createElement('article');
+            document.createElement('section');
+            document.createElement('footer');
+            document.createElement('aside');
+        </script>
     <![endif]-->
 </head>
 <body <?php body_class(); ?>>
